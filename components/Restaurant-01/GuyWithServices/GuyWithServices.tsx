@@ -5,7 +5,6 @@ import styles from "./GuyWithServices.module.css";
 import assetsJson from "@/json/assets.json";
 import EachService from "./EachService/EachService";
 import { useIntersectionObserver } from "../../../hooks/useIntersectionObserver";
-import CutGrass from "../../../components/animations/cut-grass/CutGrass";
 
 interface GuyWithServicesProps {
   image: string;
