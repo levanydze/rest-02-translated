@@ -15,8 +15,9 @@
 
 .absolute {
   position: absolute;
-  width: 100%;
-  top: 0;
+}
+.relative {
+  position: relative;
 }
 
 .section {

@@ -8,12 +8,16 @@ import Fourth from "./fotComponents/Fourth";
 export default function Footer() {
   return (
     <footer className={styles.footMainWrapper}>
-      <div className={styles.footWrapper}>
-        <First />
-        <Second />
-        <Third />
-        <Fourth />
-      </div>
+      <section className="section">
+        <div className="container">
+          <div className={styles.footWrapper}>
+            <First />
+            <Second />
+            <Third />
+            <Fourth />
+          </div>
+        </div>
+      </section>
     </footer>
   );
 }

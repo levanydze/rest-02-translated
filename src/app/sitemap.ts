@@ -19,7 +19,6 @@ export default async function sitemap() {
   // Mapping menu items to their URL objects
   const slugUrls = slug.flatMap((menus) =>
     menus.menuItems.map((item) => ({
-      //MUST FIX
       url: `${companyDomain}/menu/${item.id}`,
       lastModified: new Date().toISOString(),
       changeFrequency: "monthly",
