@@ -1,5 +1,5 @@
 import { MetadataRoute } from "next";
-import { companyDomain } from "../../Control/info";
+import { companyDomain } from "../../Control/controls";
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
