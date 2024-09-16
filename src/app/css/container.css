@@ -29,10 +29,6 @@
   background-image: url(https://github.com/levanydze/constructionSupport/blob/main/assets/white-graysh.jpeg?raw=true);
 }
 
-.section-fill {
-  background-color: var(--overlay);
-}
-
 .container {
   max-width: 1300px;
   margin: 0 auto;

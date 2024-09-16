@@ -35,7 +35,7 @@ body {
   --gray4: rgb(180, 180, 180);
   --gray3: rgb(200, 200, 200);
   --gray2: rgb(220, 220, 220);
-  --white: rgb(245, 245, 245);
+  --white: rgb(255, 255, 255);
 }
 
 /* elements */

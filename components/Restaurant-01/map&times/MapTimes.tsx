@@ -6,7 +6,7 @@ import { mapLocation } from "@/Control/info";
 
 export default function MapTimes() {
   return (
-    <section className="section">
+    <section className="section section-fill-1">
       <div className="container">
         <div className={styles.mapAndTimesWrapper}>
           <div className={styles.textMapWrap}>

@@ -11,7 +11,7 @@ function NotFoundComponent() {
         <h1 className="heading6">
           Sorry, the page you are looking for was not found!
         </h1>
-        <Link className="button" href="https://levanidze.com">
+        <Link className="button" href="../">
           Back to home
         </Link>
       </div>
