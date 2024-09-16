@@ -1,0 +1,104 @@
+/* fonts */
+:root {
+  font-family: var(--font1); /* Nicer  font for Navigation  or Title etc... */
+  font-family: var(--font2); /* fancy font can be not so much readable*/
+  font-family: var(--font3); /* not readable hand writting etc...)*/
+}
+.font1 {
+  font-family: var(--font1);
+}
+.font2 {
+  font-family: var(--font2);
+}
+.font3 {
+  font-family: var(--font3);
+}
+.font4 {
+  font-family: var(--font4);
+}
+
+/* burger nav link */
+.burger-link {
+  font-weight: 500;
+  font-size: 14px;
+  transition: all 0.2s;
+  text-transform: uppercase;
+  color: var(--gray7);
+}
+.burger-link:hover {
+  color: var(--color1);
+}
+.active-burger-link {
+  color: var(--color1);
+}
+
+/* standart Nav link */
+.link {
+  font-weight: 500;
+  font-size: 15px;
+  transition: all 0.2s;
+  font-family: var(--font1);
+  color: var(--white);
+  text-transform: uppercase;
+}
+.active-link {
+  color: var(--color1);
+}
+.link:hover {
+  color: var(--color1);
+}
+
+/* typography */
+.heading1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+.heading2 {
+  font-size: 45px;
+  font-weight: 700;
+}
+.heading3 {
+  font-size: 35px;
+  font-weight: 600;
+}
+.heading4 {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: var(--font1);
+}
+.heading5 {
+  font-size: 17px;
+  font-weight: 500;
+  font-family: var(--font1);
+}
+.heading6 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.paragraph {
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: var(--gray7);
+}
+.caption {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: var(--font1);
+}
+.caption-mini {
+  font-size: 10px;
+  font-weight: 500;
+  font-family: var(--font1);
+  text-transform: uppercase;
+}
+
+@media (max-width: 1000px) {
+  .paragraph {
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .paragraph {
+    font-size: 13px;
+  }
+}

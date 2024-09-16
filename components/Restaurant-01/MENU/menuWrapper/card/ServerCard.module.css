@@ -1,0 +1,93 @@
+.cardWrapper {
+  width: 30%;
+  max-width: 300px;
+  height: 450px;
+  margin-bottom: 30px;
+  margin: 30px 2%;
+}
+
+.cardWrapper img {
+  object-fit: cover;
+  width: 100%;
+
+  height: 60%;
+}
+
+.cardInfoDiv {
+  height: 100%;
+  padding: 5px;
+}
+.dotted {
+  border-bottom: 1px dotted var(--color4);
+  width: 100%;
+  flex: 1;
+}
+
+.namePrice {
+  display: flex;
+  gap: 5px;
+  height: 30px;
+}
+
+.namePrice h2 {
+  margin-top: 5px;
+}
+.cardWrapper h3 {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  text-align: left;
+}
+
+.details {
+  display: flex;
+  justify-content: left;
+  gap: 5px;
+}
+
+@media (max-width: 1200px) {
+  .cardWrapper {
+    width: 300px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 800px) {
+  .cardWrapper {
+    width: 300px;
+    height: 350px;
+    margin: 50px 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cardWrapper {
+    height: 350px;
+  }
+}
+
+/* detail info styles */
+
+.details {
+  height: 18px;
+}
+
+.vegan {
+  background-color: var(--vegan);
+}
+
+.special {
+  background-color: var(--color1);
+}
+
+.season {
+  background-color: var(--season);
+}
+
+.spicy {
+  background-color: var(--spicy);
+}
+
+.newItem {
+  background-color: var(--new);
+}
+/* 12 */

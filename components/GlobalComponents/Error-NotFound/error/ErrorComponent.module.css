@@ -1,0 +1,17 @@
+.errorWrapper {
+  text-align: center;
+  font-size: 30px;
+  color: var(--gray5);
+  /* background-color: var(--secondaryColor); */
+  margin: 0 auto;
+  padding: 200px 0;
+  width: 100%;
+}
+
+.errorWrapper h5,
+.errorWrapper a {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 150px;
+  padding: 200px 0;
+}

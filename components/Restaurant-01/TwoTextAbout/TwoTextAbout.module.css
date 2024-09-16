@@ -1,0 +1,34 @@
+.TwoTextWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px auto;
+}
+
+.head {
+  text-align: center;
+}
+
+.head p {
+  margin: 30px auto;
+}
+.texts {
+  display: flex;
+  width: 90%;
+  margin: 20px auto 60px auto;
+  gap: 5%;
+  color: var(--gray7);
+  line-height: 25px;
+  font-size: 15px;
+  max-width: 1200px;
+}
+
+@media (max-width: 650px) {
+  .texts {
+    line-height: 18px;
+    font-size: 15px;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}

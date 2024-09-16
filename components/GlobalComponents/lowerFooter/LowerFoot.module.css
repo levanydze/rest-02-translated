@@ -1,0 +1,10 @@
+.lowerWrap p {
+  color: var(--gray5);
+}
+.lowerWrap {
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}

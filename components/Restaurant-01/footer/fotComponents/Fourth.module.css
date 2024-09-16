@@ -1,0 +1,18 @@
+.imageWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+  max-width: 300px;
+}
+.imageWrapper img {
+  margin-bottom: 5%;
+  height: 70px;
+  width: 70px;
+  object-fit: cover;
+  background-color: var(--color1);
+}
+
+.wrapper p {
+  color: var(--textLight);
+  text-decoration: underline;
+}

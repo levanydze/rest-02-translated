@@ -1,0 +1,59 @@
+/* Variables */
+:root {
+  /* project colors */
+  /* color1 = bright color */
+  /* color5 = dark color */
+  --color1: rgb(198, 155, 37);
+  --color2: #989898;
+  --color3: #329dcf;
+  --color4: #002e5b;
+  --color4-10: #329dcf; /*opacity 10*/
+  --color4-40: #329dcf; /*opacity 40*/
+  --color4-80: #329dcf; /*opacity 80*/
+  --color5: #1e1f2b;
+
+  /* used in menu */
+  --spicy: purple;
+  --new: rgb(231, 65, 65);
+  --vegan: rgb(40, 186, 40);
+  --season: rgb(49, 145, 160);
+}
+
+/* Classes */
+
+.white {
+  color: var(--white);
+}
+.black {
+  color: var(--black);
+}
+.color1 {
+  color: var(--color1);
+}
+.color2 {
+  color: var(--color2);
+}
+.color3 {
+  color: var(--color3);
+}
+.color4 {
+  color: var(--color4);
+}
+.color5 {
+  color: var(--color5);
+}
+.bg-color1 {
+  background-color: var(--color1);
+}
+.bg-color2 {
+  background-color: var(--color2);
+}
+.bg-color3 {
+  background-color: var(--color3);
+}
+.bg-color4 {
+  background-color: var(--color4);
+}
+.bg-color5 {
+  background-color: var(--color5);
+}
