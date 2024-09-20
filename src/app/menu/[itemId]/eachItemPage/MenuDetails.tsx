@@ -3,13 +3,13 @@ import Image from "next/image";
 import { fireEachData } from "../../../../../Control/fetchingData";
 // import { MenuItemProps } from "../../functions";
 import imageJson from "@/Restaurant-02/json/images.json";
-import PageHeadImage from "@/Restaurant-01/components/PageHeadImage/PageHeadImage";
+// import PageHeadImage from "@/Restaurant-01/components/PageHeadImage/PageHeadImage";
 import { RiArrowGoBackFill } from "react-icons/ri";
 import Link from "next/link";
 import NotFoundComponent from "@/components/Error-NotFound/notFound/NotFoundComponent";
 
 export default async function MenuDetails({ itemId }: { itemId: string }) {
-  const { headImage } = imageJson;
+  // const { headImage } = imageJson;
   const data = await fireEachData(itemId);
 
   if (!data) {
@@ -18,7 +18,7 @@ export default async function MenuDetails({ itemId }: { itemId: string }) {
   }
   return (
     <>
-      <PageHeadImage image={headImage} short={true} value={data.name} />
+      {/* <PageHeadImage image={headImage} short={true} value={data.name} /> */}
       <Link href="./">
         <RiArrowGoBackFill className={styles.goBackIcon} />
       </Link>
