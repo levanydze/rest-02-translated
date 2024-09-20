@@ -1,0 +1,16 @@
+.mainNavWrap {
+  z-index: 10;
+  display: flex;
+  justify-content: right;
+}
+.listWrap {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .mainNavWrap {
+    display: none;
+  }
+}

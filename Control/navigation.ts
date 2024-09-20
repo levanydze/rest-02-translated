@@ -15,7 +15,7 @@ export const navItems: NavItemProps[] = [
   { title: "Menu", url: "/menu" },
   { title: "About us", url: "/about" },
   { title: "Contact", url: "/contact" },
-  { title: "Reseravation", url: "/reservation", button: true },
+  { title: "Reseravation", url: "/reservation", button: false },
 ];
 
 // Main  Metadata

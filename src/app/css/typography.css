@@ -19,77 +19,78 @@
 
 /* burger nav link */
 .burger-link {
-  font-weight: 500;
-  font-size: 14px;
+  font-family: var(--font2);
+  font-size: 22px;
   transition: all 0.2s;
-  text-transform: uppercase;
-  color: var(--gray7);
+  text-transform: lowercase;
+
+  color: var(--color4);
 }
 .burger-link:hover {
-  color: var(--color1);
+  text-decoration: underline;
 }
 .active-burger-link {
-  color: var(--color1);
+  text-decoration: underline;
 }
 
 /* standart Nav link */
 .link {
-  font-weight: 500;
-  font-size: 15px;
+  font-size: 22px;
   transition: all 0.2s;
-  font-family: var(--font1);
-  color: var(--white);
-  text-transform: uppercase;
+  font-family: var(--font2);
+  color: var(--color2);
+  text-transform: lowercase;
 }
 .active-link {
-  color: var(--color1);
+  /* text-decoration: underline; */
+  border-bottom: 2px solid var(--color2);
 }
 .link:hover {
-  color: var(--color1);
+  border-bottom: 2px solid var(--color2);
 }
 
 /* typography */
 .heading1 {
-  font-size: 50px;
-  font-weight: 700;
+  font-size: 150px;
+  font-family: var(--font2);
 }
 .heading2 {
-  font-size: 45px;
-  font-weight: 700;
+  font-size: 80px;
+  font-family: var(--font2);
+  line-height: 120%;
+  user-select: none;
 }
 .heading3 {
-  font-size: 35px;
+  font-size: 32px;
   font-weight: 600;
+  font-family: var(--font2);
 }
 .heading4 {
-  font-size: 30px;
-  font-weight: 600;
-  font-family: var(--font1);
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 .heading5 {
-  font-size: 17px;
-  font-weight: 500;
-  font-family: var(--font1);
-}
-.heading6 {
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 600;
 }
 .paragraph {
-  font-size: 15px;
-  letter-spacing: 1px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  line-height: 160%;
   color: var(--gray7);
 }
 .caption {
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 16px;
   font-family: var(--font1);
+  font-weight: 400;
+  line-height: 150%;
 }
 .caption-mini {
-  font-size: 10px;
-  font-weight: 500;
+  font-size: 12px;
+  font-weight: 400;
   font-family: var(--font1);
-  text-transform: uppercase;
 }
 
 @media (max-width: 1000px) {

@@ -1,3 +1,30 @@
+List of tasks to switch another project
+
+<!-- ./Restaurant/components -->
+
+1. Remove / Add "Restaurant-99" folder that includes components and json files
+
+<!-- ./Controls -->
+
+2. all ./pages must be taken with
+3. ./controls.ts - set up file
+4. ./info.ts - set up file
+5. ./navigation - fetch navigation & metadata for each page
+6. setup css/files
+7. setup fonts in layout
+8. change ./opengraph-image.png
+9. change ./favicon.ico
+10. /menu - page is full with content
+
+<!-- think about -->
+
+./Control/restaurantMenu.ts
+.sitemap.ts
+
+<!--  -->
+<!--  -->
+<!--  -->
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

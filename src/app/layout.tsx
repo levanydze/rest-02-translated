@@ -1,33 +1,24 @@
 import type { Metadata } from "next";
-import { Oswald, Gabriela, Great_Vibes, Inter } from "next/font/google";
-import "./globals.css";
-import Header from "@/components/Restaurant-01/header/Header";
-import Footer from "@/components/Restaurant-01/footer/Footer";
-import LowerFoot from "@/components/Restaurant-01/lowerFooter/LowerFoot";
-import { googleAnalyticsId } from "../../Control/controls";
+import { Paytone_One, Mulish, Roboto } from "next/font/google";
+import Header from "@/Restaurant-02/components/header/Header";
+import { googleAnalyticsId } from "@/Control/controls";
 import { Analytics } from "@vercel/analytics/react";
+import "./globals.css";
 
 //fonts
-const inter = Inter({
+const mulish = Mulish({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700"],
+  weight: ["300", "400", "500", "700"],
 });
-const oswald = Oswald({
+const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["200", "300", "400", "500", "600", "700"],
+  weight: ["300", "400", "500", "700"],
   variable: "--font1",
 });
-
-const gabriola = Gabriela({
+const paytone = Paytone_One({
   subsets: ["latin"],
   weight: ["400"],
   variable: "--font2",
-});
-
-const greatVibes = Great_Vibes({
-  subsets: ["latin"],
-  weight: ["400"],
-  variable: "--font3",
 });
 
 // SEO Metadata and title tags
@@ -56,6 +47,14 @@ export default function LocaleLayout({
   return (
     <html lang="en">
       <head>
+        {/* //google translate */}
+        <Script src="/assets/lang-config.js" strategy="beforeInteractive" />
+        <Script src="/assets/translation.js" strategy="beforeInteractive" />
+        <Script
+          src="//translate.google.com/translate_a/element.js?cb=TranslateInit"
+          strategy="afterInteractive"
+        />
+        {/* //analitycs */}
         <Script
           async
           src={`https://www.googletagmanager.com/gtag/js?${googleAnalyticsId}`}
@@ -69,13 +68,15 @@ export default function LocaleLayout({
         </Script>
       </head>
       <body
-        className={` ${inter.className} ${oswald.variable}  ${greatVibes.variable} ${gabriola.variable}   `}
+        className={` ${mulish.className} ${roboto.variable}  ${paytone.variable}   `}
       >
+        <div id="google_translate_element"></div>
+
         <Header />
         {children}
         <Analytics />
-        <Footer />
-        <LowerFoot />
+        {/* <Footer /> */}
+        {/* <LowerFoot /> */}
       </body>
     </html>
   );

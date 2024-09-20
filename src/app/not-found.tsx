@@ -1,5 +1,5 @@
 import { notFoundMetadata } from "@/Control/navigation";
-import NotFoundComponent from "@/components/GlobalComponents/Error-NotFound/notFound/NotFoundComponent";
+import NotFoundComponent from "@/components/Error-NotFound/notFound/NotFoundComponent";
 
 export const metadata = {
   title: notFoundMetadata?.title,

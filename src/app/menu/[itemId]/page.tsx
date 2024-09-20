@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import styles from "./page.module.css";
-import MenuDetails from "../../../../components/Restaurant-01/MENU/menuWrapper/card/eachItemPage/MenuDetails";
+import MenuDetails from "@/src/app/menu/[itemId]/eachItemPage/MenuDetails";
 import { fireEachData } from "../../../../Control/fetchingData";
 
 import { Metadata } from "next";

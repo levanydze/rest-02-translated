@@ -1,56 +1,61 @@
-import GuyWithServices from "../../components/Restaurant-01/GuyWithServices/GuyWithServices";
-import FourBox from "../../components/Restaurant-01/FourBoxes/FourBox";
-import TextIntoPhoto from "../../components/Restaurant-01/TextIntoPhoto/TextIntoPhoto";
-import imagesJson from "../../json/images.json";
-import assetsJson from "../../json/assets.json";
-import PhotoText from "../../components/Restaurant-01/PhotoText/PhotoText";
-import HomePageMain from "../../components/Restaurant-01/Hero/HomePageMain";
-import MapTimes from "../../components/Restaurant-01/map&times/MapTimes";
-import TwoTextAbout from "../../components/Restaurant-01/TwoTextAbout/TwoTextAbout";
-import ThreeReviews from "../../components/Restaurant-01/ThreeReviews/ThreeReviews";
 import { mainMetadata } from "@/Control/navigation";
+import Testimonials from "@/Restaurant-02/components/rest-2-Testimonials/Testimonials";
+import ComponentThree from "@/Restaurant-02/components/componentThree/ComponentThree";
+import ComponentTwo from "@/Restaurant-02/components/componentTwo/ComponentTwo";
+import Hero from "@/Restaurant-02/components/hero/Hero";
+import imagesJson from "@/Restaurant-02/json/images.json";
+import ComponentSix from "@/Restaurant-02/components/componentSix/ComponentSix";
+import ComponentFive from "@/Restaurant-02/components/componentFive/ComponentFive";
+import { companyName } from "@/Control/controls";
+import { LanguageSwitcher } from "./languageSwitcher";
 
 export const metadata = {
   title: mainMetadata.title,
   description: mainMetadata.description,
+  openGraph: {
+    title: mainMetadata.title,
+    description: mainMetadata.description,
+    siteName: companyName,
+  },
 };
 
 export default function Home() {
-  const { houseIcon, chair } = assetsJson;
-  const { textIntoPhoto, olivOilApple, chef2, chef3 } = imagesJson;
+  const { hero, componentTwoImage } = imagesJson;
+  const language = "EN";
 
   return (
     <main className="fadeOut">
-      <HomePageMain image={olivOilApple} alt="pizza" outline={true} />
-
-      <PhotoText
-        image={chef3}
-        title1="Leader's Word"
-        title2="Made for future"
-        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo cum beatae, sapiente dolorem veniam doloribus eum harum rerum nemo pariatur numquam repellat dicta non architecto voluptas quasi molestiae! Commodi, molestiae?"
-        sign="Levani Levanidze"
+      <Hero
+        days="Tue-Sun"
+        hours="8:00am - 9:00 pm"
+        address1="Rue Leschot 10, 1205 "
+        address2="Genève, Switzerland"
+        image={hero}
       />
-      <TwoTextAbout />
-      <GuyWithServices image={chef2} />
-      <TextIntoPhoto
-        TextIntoPhotoIcon={houseIcon}
-        TextIntoPhotoImage={olivOilApple}
-        alt="chair"
-        reverse={false}
-        title="The Secret of Oliv Oil"
-        text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta quidem, modi sapiente sed perspiciatis fuga facilis laboriosam, necessitatibus accusamus temporibus id minima, doloremque tempora neque illo qui eveniet nobis optio?"
+      <ComponentTwo
+        title="With Love"
+        text="We strive to create a memorable experience while serving you the best environmentally sustainable dishes from our thriving local community."
+        image={componentTwoImage}
       />
-      <TextIntoPhoto
-        TextIntoPhotoIcon={chair}
-        TextIntoPhotoImage={textIntoPhoto}
-        alt="chair"
-        reverse={true}
-        title="Garantee of Crispiness"
-        text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta quidem, modi sapiente sed perspiciatis fuga facilis laboriosam, necessitatibus accusamus temporibus id minima, doloremque tempora neque illo qui eveniet nobis optio?"
+      <Testimonials
+        language={language}
+        title1="Some Love"
+        title2="From our customers"
       />
-      <ThreeReviews />
-      <FourBox />
-      <MapTimes />
+      <ComponentThree
+        title="Our Story"
+        text="What started as a simple passion for homemade sushi has rapidly evolved into a second home for all sushi enthusiast.."
+        image={componentTwoImage}
+      />
+      <ComponentSix title="Reserv a Table" language={language} />
+      <ComponentFive
+        image={componentTwoImage}
+        title="Join our community on"
+        alt1=""
+        alt2=""
+        alt3=""
+        alt4=""
+      />
     </main>
   );
 }

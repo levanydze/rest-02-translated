@@ -1,5 +1,5 @@
 :root {
-  --section-padding-xl: 80px 80px;
+  --section-padding-xl: 110px 80px;
   --section-padding-lg: 70px 70px;
   --section-padding-md: 60px 60px;
   --section-padding-sm: 40px 40px;
@@ -23,10 +23,14 @@
 .section {
   padding: var(--section-padding-xl);
   width: 100%;
+  margin: 0 auto;
+}
+.section-light {
+  background-color: var(--color4-10);
 }
 
-.section-fill-1 {
-  background-image: url(https://github.com/levanydze/constructionSupport/blob/main/assets/white-graysh.jpeg?raw=true);
+.section-dark {
+  background-color: var(--color5);
 }
 
 .container {
@@ -74,8 +78,14 @@
   padding-top: 25px;
   padding-bottom: 0;
 }
-
-.no-padding {
+.hidden {
+  overflow: hidden;
+}
+.no-padding-y {
   padding-top: 0;
   padding-bottom: 0;
+}
+.no-padding-x {
+  padding-left: 0;
+  padding-right: 0;
 }

@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import ErrorDiv from "@/components/GlobalComponents/Error-NotFound/error/ErrorComponent";
+import ErrorDiv from "@/components/Error-NotFound/error/ErrorComponent";
 import { errorMetadata } from "@/Control/navigation";
 
 export const metadata = {
